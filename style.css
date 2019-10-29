@@ -2,12 +2,26 @@ body {
     background: #3494E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: 'Roboto Mono', monospace;
 }
+
 
 nav {
     background-color: rgba(255, 250, 250, 0.43);
+    box-shadow: 10px 5px 5px rgb(141, 139, 139);
 }
 
 .navbar-brand {
     color: white;
+}
+
+.aboutme {
+    height: 500px;
+    background-color: rgba(255, 250, 250, 0.43);
+    position: relative;
+    top: 30px;
+}
+
+.rounded-circle {
+    width: 300px;
 }
