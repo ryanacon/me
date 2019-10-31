@@ -8,7 +8,11 @@ body {
 
 nav {
     background-color: rgba(255, 250, 250, 0.43);
-    box-shadow: 10px 5px 5px rgb(141, 139, 139);
+    transition: all 0.8s ease-out;
+} 
+
+.title_aboutme {
+    padding: 20px;
 }
 
 .navbar-brand {
@@ -23,20 +27,22 @@ nav {
 }
 
 .rounded-circle {
-    width: 300px;
+    width: 200px;
 }
 
 h5 {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    color: rgb(53, 50, 50);
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 20px;
+    box-shadow: 10px 5px 5px rgb(141, 139, 139);
 }
 
 .self_description {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -49,3 +55,45 @@ section {
   .sticky + .content {
     padding-top: 60px;
   }
+
+  .nav-color {
+    background-image: linear-gradient(19deg, #21D4FD 0%, #ff2188 100%);
+    -webkit-transition:  all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s ease-out;
+  }
+
+  .technology {
+    visibility: hidden;
+  }
+  /* transition */
+  .fade-in-br {
+	-webkit-animation: fade-in-br 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-br 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in-br {
+    0% {
+      -webkit-transform: translateX(50px) translateY(50px);
+              transform: translateX(50px) translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-br {
+    0% {
+      -webkit-transform: translateX(50px) translateY(50px);
+              transform: translateX(50px) translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
