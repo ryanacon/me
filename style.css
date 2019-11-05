@@ -25,7 +25,7 @@ nav {
 }
 
 .hide{
-  opacity: 0;
+  opacity: 1;
 }
 
 /* titles styling */
@@ -174,8 +174,16 @@ h5 {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  transition: all 0.5s;
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ICON STLYING */
+.fa-js{
+  font-size: 100px;
+  text-align: center;
+  padding: 20px;
 }
