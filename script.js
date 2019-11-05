@@ -36,32 +36,40 @@ $(document).ready(() => {
         })
     }
 
+    $('#myBtn').click(() => {
+        $('html,body').animate({
+            scrollTop: $("#aboutme").offset().top
+        }, 'slow');
+    });
+
 
 })
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-     
-      $('#myBtn').css({
-          opacity:'1',
-          WebkitTransition : 'opacity 500ms ease-in-out',
-          MozTransition    : 'opacity 500ms ease-in-out',
-          MsTransition     : 'opacity 500ms ease-in-out',
-          OTransition      : 'opacity 500ms ease-in-out',
-          transition       : 'opacity 500ms ease-in-out'})
+
+        $('#myBtn').css({
+            opacity: '1',
+            WebkitTransition: 'opacity 500ms ease-in-out',
+            MozTransition: 'opacity 500ms ease-in-out',
+            MsTransition: 'opacity 500ms ease-in-out',
+            OTransition: 'opacity 500ms ease-in-out',
+            transition: 'opacity 500ms ease-in-out'
+        })
     } else {
         $('#myBtn').css({
-            opacity:'0',
-            WebkitTransition : 'opacity 500ms ease-in-out',
-            MozTransition    : 'opacity 500ms ease-in-out',
-            MsTransition     : 'opacity 500ms ease-in-out',
-            OTransition      : 'opacity 500ms ease-in-out',
-            transition       : 'opacity 500ms ease-in-out'})
+            opacity: '0',
+            WebkitTransition: 'opacity 500ms ease-in-out',
+            MozTransition: 'opacity 500ms ease-in-out',
+            MsTransition: 'opacity 500ms ease-in-out',
+            OTransition: 'opacity 500ms ease-in-out',
+            transition: 'opacity 500ms ease-in-out'
+        })
     }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+
+// For Chrome, Firefox, IE and Opera
+
+
