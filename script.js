@@ -29,7 +29,7 @@ $(document).ready(() => {
         $('.hide').each(function (i) {
             let bottom_of_object = $(this).offset().top + $(this).outerHeight();
             let bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_object) {
+            if (bottom_of_window > bottom_of_object-300) {
                 $(this).animate({ 'opacity': '1' }, 500);
 
             }
