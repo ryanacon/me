@@ -1,50 +1,67 @@
-// $(document).ready(() => {
-//     $('#aboutme')
-//     $('#intro').css({opacity: 0})
-//     $('#technology').css({opacity: 0})
+$(document).ready(() => {
 
-//     $(window).scroll(() => {
-//         hideAndShowElements()
-//         fixedNav()
-//     })
 
-//     fixedNav = () =>{
-//         let y = window.scrollY;
-//         if(y>0){
-//             $('#navbar').addClass("sticky");
-//             $('#navbar').animate({
-                
-//             },1000);
-//         }
-//         else {
-//             $('#navbar').removeClass("sticky");
-//             $('#navbar').removeClass("nav-color");
-//         }
-//     }
+    $(window).scroll(() => {
+        fixedNav()
+        hideDivs()
+        scrollFunction()
 
-//     hideAndShowElements = () => {
 
-//         let scrolledwin = window.scrollY;
-//         let introsection = $('#intro').position().top;
-//         let technosection = $('#technology').position().top;
-        
-       
-//        console.log(technosection)
-//         // console.log(scrolledwin + technosection)
-//         // console.log(introsection)
-//         // console.log(scrolledwin)
-//         console.log(scrolledwin)
+    })
 
-//         if (scrolledwin + introsection > introsection) {
-//         $('#intro').css({opacity: 1})
-//         } 
-//         if(scrolledwin + technosection > technosection){
-//             $('#technology').css({opacity: 1})
-//         }
-       
-       
-        
+    fixedNav = () => {
 
-//     }
+        let y = window.scrollY;
 
-// })
+        if (y > 0) {
+            $('#navbar').addClass("sticky");
+            $('#navbar').animate({
+
+            }, 1000);
+        }
+        else {
+            $('#navbar').removeClass("sticky");
+            $('#navbar').removeClass("nav-color");
+        }
+    }
+
+    hideDivs = () => {
+        $('.hide').each(function (i) {
+            let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            let bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+                $(this).animate({ 'opacity': '1' }, 500);
+
+            }
+        })
+    }
+
+
+})
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+     
+      $('#myBtn').css({
+          opacity:'1',
+          WebkitTransition : 'opacity 500ms ease-in-out',
+          MozTransition    : 'opacity 500ms ease-in-out',
+          MsTransition     : 'opacity 500ms ease-in-out',
+          OTransition      : 'opacity 500ms ease-in-out',
+          transition       : 'opacity 500ms ease-in-out'})
+    } else {
+        $('#myBtn').css({
+            opacity:'0',
+            WebkitTransition : 'opacity 500ms ease-in-out',
+            MozTransition    : 'opacity 500ms ease-in-out',
+            MsTransition     : 'opacity 500ms ease-in-out',
+            OTransition      : 'opacity 500ms ease-in-out',
+            transition       : 'opacity 500ms ease-in-out'})
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
