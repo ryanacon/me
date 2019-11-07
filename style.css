@@ -15,7 +15,7 @@ body {
 
 span {
   position: relative;
-  top:-10px;
+  top: -10px;
 }
 
 nav {
@@ -46,7 +46,7 @@ h1 {
 h3 {
   text-align: center;
   font-size: 20px;
-  margin-top:10px;
+  margin-top: 10px;
   font-weight: bold;
   padding: 10px;
 }
@@ -54,6 +54,11 @@ h3 {
 h5 {
   text-align: center;
   color: rgb(53, 50, 50);
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 /* ----------------------------------------------------------------- */
@@ -71,6 +76,10 @@ h5 {
   margin-left: 25%;
 }
 
+/* .hide {
+  opacity: 0;
+} */
+
 /* image */
 
 .rounded-circle {
@@ -83,15 +92,29 @@ h5 {
 }
 
 /* icons */
+
 .fab {
   font-size: 50px;
   position: relative;
   top: 2px;
 }
 
-.icon_title {
-  width:100px;
+/* corrijo un pequeño desfasaje del icono */
+.email {
+  position: relative;
+  top: 2px;
+}
+
+/* .icon_title {
+  width: 100px;
   height: 100px;
+} */
+
+.icon-list:hover {
+  color: rgb(30, 102, 236);
+  background: transparent;
+  filter: drop-shadow(0 0 0.75rem rgb(58, 98, 230));
+  transition: 0.4s;
 }
 
 /* container card and cards */
@@ -141,7 +164,9 @@ h5 {
   background-color: transparent;
   border: 2px solid rgba(238, 91, 194, 0.918);
 }
+
 /* btn-card effects */
+
 .btn_slide {
   border: 2px solid rgb(216, 2, 134);
   border-radius: 15px;
@@ -158,12 +183,9 @@ h5 {
 
 .slide_right:hover {
   box-shadow: inset 400px 0 0 0 rgb(214, 112, 175);
-  color:white;
-  filter: drop-shadow(0 0 0.75rem  #EC6EAD);
+  color: white;
+  filter: drop-shadow(0 0 0.75rem #EC6EAD);
 }
-
-
-
 
 /* list */
 
@@ -171,6 +193,7 @@ h5 {
   position: relative;
   top: 10px;
 }
+
 .list-group-item {
   text-align: center;
 }
@@ -181,7 +204,26 @@ h5 {
   padding: 10px;
 }
 
+/* List-contact */
+
+.list-contact li {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.list-contact {
+  position: relative;
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1.5rem;
+  font-size: 1.25rem;
+  top: 6px;
+}
+
 /* button */
+
 #btnGoTo {
   opacity: 0;
   position: fixed;
@@ -197,13 +239,18 @@ h5 {
   border-radius: 10px;
   font-size: 18px;
   transition: all 0.5s;
+  -webkit-box-shadow: -12px 13px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 13px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 13px 12px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s;
 }
 
 #btnGoTo:hover {
   background-color: #555;
+  transition: all 0.2s;
 }
 
-/* INICIO Styling for NAV Sticky */
+/* Sticy Nav */
 
 .content {
   height: 800px;
@@ -226,6 +273,6 @@ h5 {
   transition: all 500ms ease-out;
 }
 
-/* FIN Styling for NAV Sticky */
-
-
+.icon-list {
+  font-size: 30px;
+}

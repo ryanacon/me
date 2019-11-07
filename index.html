@@ -37,15 +37,20 @@
 <body>
     <nav class="navbar" id="navbar">
         <a class="navbar-brand" href="#">RY</a>
+        <ul class="list-contact">
+            <li><a href="https://wa.me/5491149459144" target="_blank"><i class="icon-list fab fa-whatsapp"></i></a></li>
+            <li><a href="https://t.me/ryanacon" target="_blank"><i class="icon-list fab fa-telegram"></i></a></li>
+            <li><a href="mailto:robertoyanacon@gmail.com" target="_blank"><i class="icon-list email fas fa-at"></i></a></li>
+        </ul>
     </nav>
     <button id="btnGoTo" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <div class="container">
         <div class="row">
             <!-- Section 1 -->
-            <section class="offset-md-2 col-md-8">
+            <section class="offset-md-2 col-md-8" id="aboutme">
                 <article>
                     <img src="./img/perfil.jpg" class="rounded-circle rounded mx-auto d-block" alt="img_perfil">
-                    <div class="titles_cover">
+                    <div class="">
                         <h1>Roberto Yanacón</h1>
                         <h5>Fullstack Developer</h5>
                         <h5>
@@ -57,17 +62,19 @@
                 </article>
             </section>
             <!-- Section 2 -->
-            <section class="offset-md-2 col-md-8 intro">
+            <section class="offset-md-2 col-md-8 intro hide">
                 <article class="">
                     <h1 class="section_title">Titulo 1</h1>
-                    <p class="section_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+                    <p class="section_description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
                         possimus molestiae reprehenderit
                         debitis accusantium facere repudiandae delectus accusamus rerum corporis quia unde eligendi
-                        deleniti quisquam doloribus minus assumenda obcaecati provident?</p>
+                        deleniti quisquam doloribus minus assumenda obcaecati provident?
+                    </p>
                 </article>
             </section>
             <!-- Section 3 -->
-            <section class="offset-md-2 col-md-8">
+            <section class="offset-md-2 col-md-8 hide">
                 <article class="">
                     <h1 class="section_title">Lenguajes de Programación</h1>
                     <div class="card_container">
@@ -93,7 +100,7 @@
                 </article>
             </section>
             <!-- Section 4 FRONT-END -->
-            <section class="offset-md-2 col-md-8 container">
+            <section class="offset-md-2 col-md-8 container hide">
                 <article class="row">
                     <div class="offset-md-1 col-md-5">
                         <h3>Frontend</h3>
@@ -149,7 +156,7 @@
                 </article>
             </section>
             <!-- Section Projects -->
-            <section class="offset-md-2 col-md-8">
+            <section class="offset-md-2 col-md-8 hide">
                 <article class="">
                     <h1 class="section_title">Proyectos</h1>
                     <div class="card_container">
@@ -168,7 +175,8 @@
                                 <br>
                                 <br>
                                 <br>
-                                <a href="http://www.tucontadora.com.ar/" target="_blank" class="btn btn_slide slide_right">Ver proyecto</a>
+                                <a href="http://www.tucontadora.com.ar/" target="_blank"
+                                    class="btn btn_slide slide_right">Ver proyecto</a>
                             </div>
                         </div>
                         <!-- card 2 -->
@@ -179,9 +187,12 @@
                             <div class="card-body">
                                 <h5 class="card-title">TODO List</h5>
                                 <p class="card-text">
-                                    Aplicación desarrollada en ReactJS con framework de MaterializeCSS en servidor Node deplegado en Heroku, persistencia de datos mediante almacenamiento en Local Storage en navegador
+                                    Aplicación desarrollada en ReactJS con framework de MaterializeCSS en servidor Node
+                                    deplegado en Heroku, persistencia de datos mediante almacenamiento en Local Storage
+                                    en navegador
                                 </p>
-                                <a href="https://reactjs-todolist-app.herokuapp.com/#!" target="_blank" class="btn btn_slide slide_right">Ver Proyecto</a>
+                                <a href="https://reactjs-todolist-app.herokuapp.com/#!" target="_blank"
+                                    class="btn btn_slide slide_right">Ver Proyecto</a>
                             </div>
                         </div>
 
