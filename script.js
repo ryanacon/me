@@ -29,14 +29,14 @@ $(document).ready(() => {
         $('.hide').each(function (i) {
             let bottom_of_object = $(this).offset().top + $(this).outerHeight();
             let bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_object-300) {
+            if (bottom_of_window > bottom_of_object - 300) {
                 $(this).animate({ 'opacity': '1' }, 500);
 
             }
         })
     }
 
-    $('#myBtn').click(() => {
+    $('#btnGoTo').click(() => {
         $('html,body').animate({
             scrollTop: $("#aboutme").offset().top
         }, 'slow');
@@ -48,7 +48,7 @@ $(document).ready(() => {
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
-        $('#myBtn').css({
+        $('#btnGoTo').css({
             opacity: '1',
             WebkitTransition: 'opacity 500ms ease-in-out',
             MozTransition: 'opacity 500ms ease-in-out',
@@ -57,7 +57,7 @@ function scrollFunction() {
             transition: 'opacity 500ms ease-in-out'
         })
     } else {
-        $('#myBtn').css({
+        $('#btnGoTo').css({
             opacity: '0',
             WebkitTransition: 'opacity 500ms ease-in-out',
             MozTransition: 'opacity 500ms ease-in-out',
@@ -67,9 +67,5 @@ function scrollFunction() {
         })
     }
 }
-
-// When the user clicks on the button, scroll to the top of the document
-
-// For Chrome, Firefox, IE and Opera
 
 

@@ -27,72 +27,124 @@
 
     <!-- Awesone Icons -->
     <script src="https://kit.fontawesome.com/1f5b454f86.js" crossorigin="anonymous"></script>
-    <title>Portfolio</title>
+
+    <!-- Emojis -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <title>RY-Portfolio</title>
 </head>
 
 <body>
     <nav class="navbar" id="navbar">
         <a class="navbar-brand" href="#">RY</a>
     </nav>
-    <button id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-    <div class="container content" id="content">
+    <button id="btnGoTo" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <div class="container">
         <div class="row">
             <!-- Section 1 -->
-            <section class="offset-md-2 col-md-8 aboutme " id="aboutme">
+            <section class="offset-md-2 col-md-8">
                 <article>
-                    <img src="./img/perfil.jpg" class="rounded-circle rounded mx-auto d-block" alt="imagen_perfil">
-                    <h1 class="title_aboutme text-center">Roberto Yanacón</h1>
-                    <h5 class="devTitle typewriter">Fullstack Developer</h5>
-                    <h5 class="location">🇦🇷Buenos Aires, Argentina</h5>
+                    <img src="./img/perfil.jpg" class="rounded-circle rounded mx-auto d-block" alt="img_perfil">
+                    <div class="titles_cover">
+                        <h1>Roberto Yanacón</h1>
+                        <h5>Fullstack Developer</h5>
+                        <h5>
+                            <i class="em em-flag-ar" aria-role="presentation" aria-label="Argentina Flag">
+                            </i>
+                            Buenos Aires, Argentina
+                        </h5>
+                    </div>
                 </article>
             </section>
             <!-- Section 2 -->
-            <section class="offset-md-2 col-md-8 hide" id="intro">
-                <article>
-                    <div class="self-description">
-                        <div class="objetive">
-                            <h3 class="titleAboutMe">Acerca de Mi</h3>
-                            <p class="textAboutMe">
-                                Soy <span>programador web fullstack</span>,
-                                en busqueda de oportunidades de inserción en proyectos de Marketing Digital,
-                                Desarrollo de Aplicaciones Web, e UX.
-                            </p>
-                        </div>
-                    </div>
+            <section class="offset-md-2 col-md-8 intro">
+                <article class="">
+                    <h1 class="section_title">Titulo 1</h1>
+                    <p class="section_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+                        possimus molestiae reprehenderit
+                        debitis accusantium facere repudiandae delectus accusamus rerum corporis quia unde eligendi
+                        deleniti quisquam doloribus minus assumenda obcaecati provident?</p>
                 </article>
             </section>
             <!-- Section 3 -->
-            <section class="offset-md-2 col-md-8 hide" id="technology">
-                <article>
-                    <div class="self-description">
-                        <div class="objetive">
-                            <h3 class="titleTechnology">Tecnologías</h3>
-                            <p class="textTechnology">
-                                <h5>Lenguajes</h5>
-                                <div class="card col-md-4 col-sM-12">
-                                    <div class="card-body">
-                                        <h6 class="text-center">Javascript</h6>
-                                        <i class="fab fa-js text-center"></i>
-                                    </div>
-                                </div>
-                            </p>
+            <section class="offset-md-2 col-md-8">
+                <article class="">
+                    <h1 class="section_title">Lenguajes de Programación</h1>
+                    <div class="card_container">
+                        <!-- card 1 -->
+                        <div class="card offset-md-2 col-md-4">
+                            <div class="card-body">
+                                <i class="fab fa-js"></i>
+                                <h3>
+                                    Javascript
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card col-md-4">
+                            <div class="card-body">
+                                <i class="fab fa-python"></i>
+                                <h3>
+                                    Python
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </article>
             </section>
-            <!-- Section 4 -->
-            <section class="offset-md-2 col-md-8 hide" id="technology">
-                <article>
-                    <div class="self-description">
-                        <div class="objetive">
-                            <h3 class="titleTechnology">COMPLETAR</h3>
-                            <p class="textTechnology">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, dolores. Labore,
-                                placeat eius non nemo facilis recusandae delectus consectetur mollitia assumenda
-                                accusamus nostrum sed. Tempore perspiciatis laborum corporis dolorum nesciunt?
-                            </p>
-                        </div>
+            <!-- Section 4 FRONT-END -->
+            <section class="offset-md-2 col-md-8 container">
+                <article class="row">
+                    <div class="offset-md-1 col-md-5">
+                        <h3>Frontend</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="fab fa-react"></i>
+                                <p class="text-center list-group-text">ReactJS</p>
+                            <li class="list-group-item">
+                                <p class="text-center list-group-text list-group-text-alone ">JQuery</p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fab fa-sass"></i>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fab fa-html5"></i>
+                                <p class="text-center list-group-text">HTML5</p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fab fa-css3"></i>
+                                <p class="text-center list-group-text">CSS3</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="text-center list-group-text list-group-text-alone ">Materialize</p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <p class="text-center list-group-text">Bootstrap</p>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fab fa-angular"></i>
+                                <p class="text-center list-group-text">Angular</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Backend</h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="fab fa-node"></i>
+                                <p class="text-center list-group-text">NodeJS</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p class="text-center list-group-text-alone">MongoDB</p>
+                            </li>
+                            <li class="list-group-item">
+                                    <p class="text-center list-group-text-alone">Mongoose</p>
+                                </li>
+                            <li class="list-group-item">
+                                <p class="text-center list-group-text-alone">Express</p>
+                            </li>
+                        </ul>
                     </div>
                 </article>
             </section>
