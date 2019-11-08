@@ -61,6 +61,11 @@ a {
   color: black;
 }
 
+img {
+  object-fit: contain;
+  object-position: center;
+}
+
 /* ----------------------------------------------------------------- */
 
 .section_title {
