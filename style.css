@@ -76,9 +76,9 @@ a{
   margin-left: 25%;
 }
 
-/* .hide {
+.hide {
   opacity: 0;
-} */
+}
 
 /* image */
 
@@ -275,4 +275,9 @@ a{
 
 .icon-list {
   font-size: 30px;
+}
+
+/* Resume */
+.resume{
+  text-align: center;
 }
