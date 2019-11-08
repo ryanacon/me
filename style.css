@@ -56,7 +56,7 @@ h5 {
   color: rgb(53, 50, 50);
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -100,6 +100,7 @@ a{
 }
 
 /* corrijo un pequeño desfasaje del icono */
+
 .email {
   position: relative;
   top: 2px;
@@ -278,13 +279,14 @@ a{
 }
 
 /* Resume */
+
 .col-resume {
   position: relative;
-  top:10px;
+  top: 10px;
   padding: 10px;
 }
 
-.skills{
+.skills {
   background-color: white;
   border: 1px solid black;
 }
@@ -294,7 +296,7 @@ a{
   top: 15px;
 }
 
-.projects{
+.projects {
   background-color: rgb(216, 168, 168);
   border: 1px solid black;
 }
@@ -307,4 +309,25 @@ a{
 .idioms {
   background-color: rgb(216, 168, 168);
   border: 1px solid rgb(216, 26, 26);
+}
+
+/* COMMING SOON DIV */
+
+.comming-soon {
+  position: fixed;
+  z-index: 1000;
+  width: 377px;
+  height: 28px;
+  background-color: red;
+  color: white;
+  transform: rotate(45deg);
+  right: -76px;
+  top: 108px;
+  text-align: center;
+  border: none;
+}
+
+.comming-soon-band {
+  background-color: yellow;
+  height: 3px;
 }
