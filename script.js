@@ -13,15 +13,11 @@ $(document).ready(() => {
 
         let y = window.scrollY;
 
-        if (y > 0) {
+        if (y > 100) {
             $('#navbar').addClass("sticky");
-            $('#navbar').animate({
-
-            }, 1000);
         }
         else {
             $('#navbar').removeClass("sticky");
-            $('#navbar').removeClass("nav-color");
         }
     }
 
