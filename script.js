@@ -13,7 +13,7 @@ $(document).ready(() => {
 
         let y = window.scrollY;
 
-        if (y > 100) {
+        if (y > 150) {
             $('#navbar').addClass("sticky");
         }
         else {
@@ -62,6 +62,5 @@ function scrollFunction() {
             transition: 'opacity 500ms ease-in-out'
         })
     }
+
 }
-
-

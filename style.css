@@ -308,7 +308,7 @@ img {
 
 /* Resume */
 
-.col-resume {
+.col-resume, .col-left {
   position: relative;
   top: 10px;
   padding: 10px;
@@ -364,3 +364,6 @@ img {
   background-color: yellow;
   height: 3px;
 }
+
+/* time line */
+
